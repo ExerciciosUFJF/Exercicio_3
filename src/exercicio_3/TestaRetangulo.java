@@ -5,6 +5,8 @@
  */
 package exercicio_3;
 
+import model.Retangulo;
+
 /**
  *
  * @author Luis
@@ -15,7 +17,19 @@ public class TestaRetangulo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Retangulo retangulo1 = new Retangulo();
+        Retangulo retangulo2 = new Retangulo();
+        
+        retangulo1.setLargura(3);
+        retangulo1.setAltura(34);
+        System.out.println("A área do primeiro retângulo é " + retangulo1.calculaArea() 
+        + " e o seu perímetro é " + retangulo1.calculaPerimetro());
+        
+        System.out.println("");
+        retangulo2.setLargura(3);
+        retangulo2.setAltura(2);
+        System.out.println("A área do segundo retângulo é " + retangulo2.calculaArea() 
+        + " e o seu perímetro é " + retangulo2.calculaPerimetro());
     }
     
 }
